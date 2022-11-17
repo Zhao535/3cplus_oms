@@ -1,0 +1,65 @@
+@import "color.less";
+
+
+.header-content {
+    .header {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.65);
+        font-weight: 600;
+        line-height: 50px;
+    }
+
+    .content {
+        margin-bottom: 7px;
+
+        img {
+            width: 90px;
+            height: 90px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .specs-span {
+            margin-right: 30px;
+
+            &:after {
+                position: relative;
+                content: "";
+                border-right: 1px solid #e5e5e5;
+                height: 10px;
+                padding-left: 30px;
+            }
+
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+
+        .specs-price {
+            span {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.ant-divider {
+    .ant-divider-horizontal {
+      margin: 12px 0 !important;
+    }
+  }
+  
+  .btm-bottom {
+    float: right;
+    position: absolute;
+    bottom: 10px;
+    right: 17px;
+  
+    .ant-btn {
+      margin: 0 8px 0 10px;
+    }
+  }
